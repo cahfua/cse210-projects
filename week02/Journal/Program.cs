@@ -1,5 +1,11 @@
 using System;
 
+/*
+There are two creative features I added:
+1. Random writing prompts are displayed when adding an entry.
+2. A mood tracker (1-10) is included for each entry.
+ */
+
 class Program
 {
     static void Main()
