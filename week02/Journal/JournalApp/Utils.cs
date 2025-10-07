@@ -25,4 +25,16 @@ public static class Utils
         int index = rand.Next(prompts.Count);
         return prompts[index];
     }
+
+    public static string Escape(string value)
+    {
+        if (value == null) return "";
+        return value.Replace("\\", "\\\\").Replace("|", "\\|");
+    }
+
+    public static string Unescape(string value)
+    {
+        if (value == null) return "";
+        return value.Replace("\\|", "|").Replace("\\\\", "\\");
+    }
 }
